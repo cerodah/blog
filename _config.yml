@@ -1,5 +1,5 @@
 title: Seguridad Informática
-description: "A Jekyll Blog Theme For Hackers"
+description: "Web en el que voy a subir tanto como write-ups de CTF, tanto como artículos sobre explotación de vulnerabilidades en un entorno controlado."
 author:
   name: "meretec"
   email: "meretec@proton.me"
@@ -28,5 +28,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "/dev/null"
+owner : "cerodah"
 year : "XXXX"
