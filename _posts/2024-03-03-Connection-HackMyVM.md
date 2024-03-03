@@ -34,7 +34,7 @@ Hay un archivo index.html, por intuición el servidor web se está cargando desd
 > ![image](https://github.com/cerodah/blog/assets/82907557/3bfe36a9-2232-4733-ad36-27f6ec9adfc1)
 
 # [](#header-1)Escalada de privilegios 
-Una vez obtenida nuestra sesión, siguiendo la metodologia en CTF's podemos enumerar binarios SUID. ¿Qué son los permisos SUID? Básicamente, es un permiso que se puede ejecutar como si tu fueras el propietario del archivo.
+Una vez obtenida nuestra sesión, siguiendo la metodologia en CTF's podemos enumerar permisos SUID. ¿Qué son los permisos SUID? Básicamente, es un permiso que se puede ejecutar como si tu fueras el propietario del archivo.
 Con `find / -perm -4000 2>/dev/null` le estamos diciendo al sistema que quiero que me busques en la carpeta raíz archivos con el bit SUID activado. El numero 4000 es el valor octal correspondiente al bit SUID.
 > ![image](https://github.com/cerodah/blog/assets/82907557/f75b4151-e18b-4d57-b4f2-7dad9d89c0aa)
 
