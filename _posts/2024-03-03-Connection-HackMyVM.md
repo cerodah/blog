@@ -2,7 +2,10 @@
 title: Connection WriteUp - HackMyVM
 published: true
 ---
+
 [HackMyVM - Connection](https://hackmyvm.eu/machines/machine.php?vm=Connection)
+
+
 
 Este es un writeup que hice en 2021 de nivel fácil. En esta máquina enumeramos un servicio SMB en el que nos aprovecharemos para subir nuestra propia shell. Para la escalada utilizaremos `gdb` con permisos SUID para escalar a root.
 
