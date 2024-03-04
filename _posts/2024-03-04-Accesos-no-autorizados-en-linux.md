@@ -1,5 +1,5 @@
 ---
-title: Accesos no autorizados en linux - Info
+title: Accesos no autorizados en Linux - Info
 published: true
 ---
 
