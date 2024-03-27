@@ -16,7 +16,8 @@ No voy a enfocarme profundamente en explicar la estructura de este archivo, si n
 # [](#header-1) Explotación con permiso de lectura
 Teniendo la habilidad de poder leer sobre este archivo, podemos copiar el contenido y posteriormente obtener los hashes y romperlos con hashcat o john.
 
-Imaginamos que siendo el usuario "unix" queremos acceder a bob sin saber su contraseña y nos damos cuenta que podemos leer sobre shadow. 
+Imaginamos que siendo el usuario "unix" queremos acceder a bob sin saber su contraseña y nos damos cuenta que podemos leer sobre shadow.
+
 ![Captura de pantalla 2024-03-12 033052](https://github.com/cerodah/blog/assets/82907557/66a56b94-7f61-4efe-b64f-3ba853c59473)
 
 Nos lo copiamos y lo traemos a nuestra máquina. En ella usaremos hashcat para poder crackear la contraseña. Si nos fijamos, el hash es *yescrypt* que es un derivado de *scrypt*.
