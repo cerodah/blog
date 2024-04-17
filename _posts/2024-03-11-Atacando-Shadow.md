@@ -31,3 +31,7 @@ Posteriormente, con john y el famoso diccionario rockyou.txt lo podemos crackear
 
 Y ya lo tendríamos!
 
+```
+Happy Hacking ^^
+```
+
