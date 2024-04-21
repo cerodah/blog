@@ -1,16 +1,9 @@
 ---
-layout: single
 title: Bypass Windows Defender con Nim.
-excerpt: "En este artículo, os muestro como es posible eludir el AV de Windows para obtener un shell inverso estable con nim."
-date: 2024-04-21
-classes: wide
-categories:
-  - Research
-tags:
-  - AV
-  - Reverse Shell
-  - Bypass
+published: true
 ---
+
+En este artículo, os muestro como es posible eludir el AV de Windows para obtener un shell inverso estable con nim
 
 ## ¿Qué es Nim?
 Según el sitio web oficial de NIM, lo definen como un lenguaje de programación que tiene el poder de poder generar archivos ejecutables sin la necesidad de dependencias. Es utilizado para desarrollar aplicaciones para sistemas Windows, BSD, Linux, etc.
