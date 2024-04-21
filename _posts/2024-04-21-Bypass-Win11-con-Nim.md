@@ -29,7 +29,7 @@ Una vez acabada con la instalación debemos de clonar un repositorio de GitHub, 
 https://github.com/Sn1r/Nim-Reverse-Shell
 ```
 ## Tutorial.
-Una vez clonado, debemos de editar las variables v1 y v2, reemplanzadolas por nuestra IP y el puerto que queramos usar.
+Una vez clonado, debemos de editar las variables v1 y v2, reemplanzadolas por nuestra IP y el puerto que queramos usar del archivo rev_shell.nim.
 
 > ![imagen](https://github.com/cerodah/blog/assets/82907557/79c01442-3105-406a-bb5d-0c68c31c4aa9)
 
