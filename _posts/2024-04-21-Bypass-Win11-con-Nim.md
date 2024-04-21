@@ -13,7 +13,7 @@ tags:
 ---
 
 ## ¿Qué es Nim?
-Según el sitio web oficial de NIM, lo definen como un lenguaje de programación que tiene el poder de poder generar archivos ejecutables sin la necesidad de dependencias. Es utilizado para desarrollar aplicaciones para sistemas Winwows, BSD, Linux, etc.
+Según el sitio web oficial de NIM, lo definen como un lenguaje de programación que tiene el poder de poder generar archivos ejecutables sin la necesidad de dependencias. Es utilizado para desarrollar aplicaciones para sistemas Windows, BSD, Linux, etc.
 
 ## Requisitos previos.
 Como es de entender, se necesita tener instalado previamente nim y mingw. Esto se puede completar mediante la comanda:
