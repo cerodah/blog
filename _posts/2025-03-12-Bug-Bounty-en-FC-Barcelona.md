@@ -17,6 +17,7 @@ El XSS es produeix quan l'aplicació web no neteja ni valida les dades d'entrada
 ### Payload utilitzat
 ```html
 <script src=data:text/j\0061v\0061&#115&#99&#114&#105&#112&#116, \u0061%6C%65 %72%A4/XSS/)></script>
+```
 ## Cadena desofuscada
 <script src="data:text/javascript,alert(/XSS/)"></script>
 Aquest payload evita filtres mitjançant codificació hexadecimal i Unicode.
