@@ -1,8 +1,12 @@
+---
+title: Bug Bounty FC Barcelona.
+published: true
+---
 # Informe de Vulnerabilitat: Reflected XSS a fundacion.fcbarcelona.es
 
 ## Subdomini afectat
 
-https://fundacion.fcbarcelona.es
+                                                                                                                      https://fundacion.fcbarcelona.es
 
 ## Descripció de la vulnerabilitat
 
@@ -22,7 +26,7 @@ Quan un usuari accedeix a un enllaç que conté el payload maliciós, el JavaScr
 
 A continuació, es mostra el payload utilitzat per demostrar l’explotació de la vulnerabilitat:
 
-‹script src=data:text/j\0061v\0061&#115&#99&#114&#105&#112&#116,\u0061%6C%65%72%74(/XSS/)›‹/script›
+`‹script src=data:text/j\0061v\0061&#115&#99&#114&#105&#112&#116,\u0061%6C%65%72%74(/XSS/)›‹/script›`
 
 ### Cadena desofuscada
 
