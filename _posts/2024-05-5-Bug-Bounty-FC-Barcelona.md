@@ -16,7 +16,9 @@ Esta vulnerabilidad permite a un atacante inyectar código JavaScript malicioso 
 
 ## Funcionamiento de la vulnerabilidad
 
-El XSS se produce cuando una aplicación web recibe datos de un usuario y los muestra posteriormente en una página sin validar o limpiar correctamente ese contenido. En este caso concreto, el parámetro vulnerable refleja el contenido sin ningún tipo de saneamiento, permitiendo así la ejecución del código inyectado.
+El XSS se produce cuando una aplicación web recibe datos de un usuario y los muestra posteriormente en una página sin validar o limpiar correctamente ese contenido. 
+
+En este caso concreto, el parámetro vulnerable refleja el contenido sin ningún tipo de saneamiento, permitiendo así la ejecución del código inyectado.
 
 Cuando un usuario accede a un enlace que contiene el payload malicioso, el JavaScript incluido se ejecuta en el contexto de la sesión de ese usuario. Esto puede permitir acciones como:
 
@@ -46,6 +48,9 @@ Se ha creado un vídeo de prueba de concepto donde se demuestra la ejecución de
   Tu navegador no soporta videos HTML5.
 </video>
 
+## Aclaración
+Esta entrada ya a sido reportada y solucionada.
+
 ## Recomendaciones
 
 Para mitigar esta vulnerabilidad, se recomienda al equipo de desarrollo aplicar las siguientes medidas:
@@ -56,4 +61,4 @@ Para mitigar esta vulnerabilidad, se recomienda al equipo de desarrollo aplicar 
 
 ---
 
-*Este informe ha sido generado con fines educativos y de investigación en ciberseguridad.*
+*Este informe ha sido generado con fines educativos y de investigación en ciberseguridad, no para su uso malicioso.*
