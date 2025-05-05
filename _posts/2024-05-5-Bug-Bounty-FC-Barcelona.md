@@ -30,7 +30,7 @@ A continuació, es mostra el payload utilitzat per demostrar l’explotació de 
 
 ### Cadena desofuscada
 
-<script src="data:text/javascript,alert(/XSS/)"></script>
+`<script src="data:text/javascript,alert(/XSS/)"></script>`
 
 Aquest payload fa ús de codificacions com hexadecimal i Unicode per evadir filtres de seguretat habituals.
 
