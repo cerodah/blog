@@ -42,7 +42,7 @@ S’ha creat un vídeo de prova de concepte on es demostra l’execució del XSS
 
 **[PoC: XSS_PoC_FCBarcelona.mp4]**
 <video controls width="600">
-  <source src="/assets/XSS_PoC_FCBarcelona.mp4" type="video/mp4">
+  <source src="/assets/XSS_PoC_FCBarcelona(1).mp4" type="video/mp4">
   Tu navegador no soporta videos HTML5.
 </video>
 
