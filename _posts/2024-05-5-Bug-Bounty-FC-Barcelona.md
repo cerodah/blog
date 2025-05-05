@@ -10,7 +10,9 @@ published: true
 
 ## Descripció de la vulnerabilitat
 
-S'ha identificat una vulnerabilitat de tipus **Reflected Cross-Site Scripting (XSS)** en el subdomini indicat. Aquesta vulnerabilitat permet a un atacant injectar codi JavaScript maliciós dins d'una pàgina web, que es reflecteix i s'executa al navegador de l'usuari quan visita l'enllaç preparat.
+S'ha identificat una vulnerabilitat de tipus **Reflected Cross-Site Scripting (XSS)** en el subdomini indicat. 
+
+Aquesta vulnerabilitat permet a un atacant injectar codi JavaScript maliciós dins d'una pàgina web, que es reflecteix i s'executa al navegador de l'usuari quan visita l'enllaç preparat.
 
 ## Funcionament de la vulnerabilitat
 
