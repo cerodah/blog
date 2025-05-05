@@ -1,32 +1,32 @@
 ---
-title: Bug Bounty FC Barcelona.
+title: Bug Bounty FC Barcelona
 published: true
 ---
-# Informe de Vulnerabilitat: Reflected XSS a fundacion.fcbarcelona.es
+# Informe de Vulnerabilidad: Reflected XSS en fundacion.fcbarcelona.es
 
-## Subdomini afectat
+## Subdominio afectado
 
-                                              https://fundacion.fcbarcelona.es
+**https://fundacion.fcbarcelona.es**
 
-## Descripció de la vulnerabilitat
+## Descripción de la vulnerabilidad
 
-S'ha identificat una vulnerabilitat de tipus **Reflected Cross-Site Scripting (XSS)** en el subdomini indicat. 
+Se ha identificado una vulnerabilidad de tipo **Reflected Cross-Site Scripting (XSS)** en el subdominio indicado. 
 
-Aquesta vulnerabilitat permet a un atacant injectar codi JavaScript maliciós dins d'una pàgina web, que es reflecteix i s'executa al navegador de l'usuari quan visita l'enllaç preparat.
+Esta vulnerabilidad permite a un atacante inyectar código JavaScript malicioso en una página web, que se refleja y se ejecuta en el navegador del usuario cuando visita el enlace preparado.
 
-## Funcionament de la vulnerabilitat
+## Funcionamiento de la vulnerabilidad
 
-El XSS es produeix quan una aplicació web rep dades d’un usuari i les mostra posteriorment a una pàgina sense validar o netejar correctament aquest contingut. En aquest cas concret, el paràmetre vulnerable reflecteix el contingut sense cap sanejament, permetent així l’execució del codi injectat.
+El XSS se produce cuando una aplicación web recibe datos de un usuario y los muestra posteriormente en una página sin validar o limpiar correctamente ese contenido. En este caso concreto, el parámetro vulnerable refleja el contenido sin ningún tipo de saneamiento, permitiendo así la ejecución del código inyectado.
 
-Quan un usuari accedeix a un enllaç que conté el payload maliciós, el JavaScript inclòs s’executa en el context de la sessió d’aquell usuari. Això pot permetre accions com:
+Cuando un usuario accede a un enlace que contiene el payload malicioso, el JavaScript incluido se ejecuta en el contexto de la sesión de ese usuario. Esto puede permitir acciones como:
 
-- Robar cookies de sessió
-- Modificar el contingut de la pàgina
-- Redirigir l’usuari a un lloc extern controlat per l’atacant
+- Robo de cookies de sesión
+- Modificación del contenido de la página
+- Redirección del usuario a un sitio externo controlado por el atacante
 
-## Payload utilitzat
+## Payload utilizado
 
-A continuació, es mostra el payload utilitzat per demostrar l’explotació de la vulnerabilitat:
+A continuación, se muestra el payload utilizado para demostrar la explotación de la vulnerabilidad:
 
 `‹script src=data:text/j\0061v\0061&#115&#99&#114&#105&#112&#116,\u0061%6C%65%72%74(/XSS/)›‹/script›`
 
@@ -34,27 +34,26 @@ A continuació, es mostra el payload utilitzat per demostrar l’explotació de 
 
 `<script src="data:text/javascript,alert(/XSS/)"></script>`
 
-Aquest payload fa ús de codificacions com hexadecimal i Unicode per evadir filtres de seguretat habituals.
+Este payload hace uso de codificaciones como hexadecimal y Unicode para evadir filtros de seguridad comunes.
 
-## Prova de concepte (PoC)
+## Prueba de concepto (PoC)
 
-S’ha creat un vídeo de prova de concepte on es demostra l’execució del XSS a través de l’enllaç maliciós. Aquest vídeo mostra el comportament de la pàgina quan es carrega el codi injectat i l’execució del `alert()` com a prova.
+Se ha creado un vídeo de prueba de concepto donde se demuestra la ejecución del XSS a través del enlace malicioso. Este vídeo muestra el comportamiento de la página cuando se carga el código inyectado y la ejecución del `alert()` como prueba.
 
 **[PoC: XSS_PoC_FCBarcelona.mp4]**
 <video controls width="600" autoplay="">
   <source src="https://github.com/cerodah/blog/raw/refs/heads/master/assets/XSS_PoC_FCBarcelona(1).mp4">
-  Tu navegador no soporddta videos HTML5.
+  Tu navegador no soporta videos HTML5.
 </video>
 
+## Recomendaciones
 
-## Recomanacions
+Para mitigar esta vulnerabilidad, se recomienda al equipo de desarrollo aplicar las siguientes medidas:
 
-Per mitigar aquesta vulnerabilitat, es recomana al departament de desenvolupament aplicar les següents mesures:
-
-- **Validació i neteja d’entrada:** Totes les dades rebudes dels usuaris han de ser validades i netejades abans de ser mostrades.
-- **Encapçalaments de seguretat HTTP:** Implementar polítiques CSP (Content Security Policy) per limitar les fonts de scripts i prevenir l’execució de codi no autoritzat.
-- **Revisió del codi:** Realitzar auditories regulars del codi per detectar i corregir vectors d’injecció de codi.
+- **Validación y limpieza de entrada:** Todos los datos recibidos por parte del usuario deben ser validados y limpiados antes de ser mostrados.
+- **Encabezados de seguridad HTTP:** Implementar políticas CSP (Content Security Policy) para limitar las fuentes de scripts y prevenir la ejecución de código no autorizado.
+- **Revisión del código:** Realizar auditorías regulares del código para detectar y corregir vectores de inyección de código.
 
 ---
 
-*Aquest informe ha estat generat amb finalitats educatives i d'investigació en ciberseguretat.*
+*Este informe ha sido generado con fines educativos y de investigación en ciberseguridad.*
