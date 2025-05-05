@@ -39,6 +39,11 @@ Aquest payload fa ús de codificacions com hexadecimal i Unicode per evadir filt
 S’ha creat un vídeo de prova de concepte on es demostra l’execució del XSS a través de l’enllaç maliciós. Aquest vídeo mostra el comportament de la pàgina quan es carrega el codi injectat i l’execució del `alert()` com a prova.
 
 **[Incloure vídeo aquí: XSS_PoC_FCBarcelona.mp4]**
+<video controls width="600">
+  <source src="/assets/videos/XSS_PoC_FCBarcelona.mp4" type="video/mp4">
+  Tu navegador no soporta videos HTML5.
+</video>
+
 
 ## Recomanacions
 
