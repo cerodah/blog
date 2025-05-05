@@ -6,7 +6,7 @@ published: true
 
 ## Subdomini afectat
 
-                                                                                                                      https://fundacion.fcbarcelona.es
+                                              https://fundacion.fcbarcelona.es
 
 ## Descripció de la vulnerabilitat
 
