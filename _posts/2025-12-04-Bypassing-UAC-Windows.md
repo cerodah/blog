@@ -106,9 +106,9 @@ Volvemos con fodhelper. Vemos que intenta abir un archivo con el ProgID de ms-se
 Imaginemos que hemos instalado una backdoor en un servidor objetivo por comodidad. hemo slogrado crear una cuenta del grupo de Admin, pero el UAC impide la ejecución de tareas con privilegios. 
 Nos conectamos a la puera trasera con netcat y configuramos los registros necesarios para asociar la clase ms-settings a una reverse shell.
 
-<img src="https://github.com/cerodah/blog/blob/master/assets/image12.png">
+<img width="1951" height="1020" alt="image" src="https://github.com/user-attachments/assets/961da8c9-e212-483c-9427-3ea20e4c55bb" />
 
-Como resultado de esto, se crearon artefactos en el sistema objetivo en formas de clave de registro. Para evitar la detección debemos de limpiar el sistema con: `reg delete HKCU\Software\Classes\ms-settings\ /f`
+Como resultado de esto, se crearon registros en el sistema objetivo en formas de clave de registro. Para evitar la detección debemos de limpiar el sistema con: `reg delete HKCU\Software\Classes\ms-settings\ /f`
 
 Happy Hacking ^^
 
