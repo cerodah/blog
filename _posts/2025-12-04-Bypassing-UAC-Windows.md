@@ -28,7 +28,7 @@ En este blog no voy a explicar a fondo los Niveles de Integridad (IL) y el Contr
 El MIC tiene prioridad sobre las DACL normales de Windows, por lo que puede estar autorizado a acceder a un recurso segun DACL (Discretionary Access Control Lists)
 
 # [](#header-1) Bypassing UAC
-Desde la perspectiva de un atacante, podrían haber situaciones en la que se accede a un host Windows desde una shell remota mediante el cmd.exe o PowerShell. Incluso desde una cuenta del grupo de Administradores, pero al interntar crear un usuario de puerta trasera por si se quiere entrar en el futuro, se obtendra el siguiente error.
+Desde la perspectiva de un atacante, podrían haber situaciones en la que se accede a un host Windows desde una shell remota mediante el cmd.exe o PowerShell. Incluso desde una cuenta del grupo de Administradores, al interntar crear un usuario de puerta trasera por si se quiere entrar en el futuro, se obtendrá el siguiente error.
 
 <img width="885" height="211" alt="imagen" src="https://github.com/user-attachments/assets/e0d42423-672c-42ec-a18f-8c7d0fab58f3" />
 
