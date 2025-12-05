@@ -94,7 +94,7 @@ Desde nuestra vista de Red Team, significa que se puede usar a través de una sh
 Lo que se observó sobre fodhelper es que busca una clave de registro especifica. 
 
 ![UAC](/assets/image11.png)
-Cuando Windows abre un archivo verifica en el registro que aplicación usar. El registro tiene una clave conopcida como ProgID para cada tipo de archivo, donde se asocia la aplicacion correspondiente.
+Cuando Windows abre un archivo verifica en el registro que aplicación usar. El registro tiene una clave conocida como ProgID para cada tipo de archivo, donde se asocia la aplicación correspondiente.
 Si el usuario abre un HTML, se consulta una parte del registro conocida como `HKEY_CLASSES_ROOT` para que el sistema sepa que debe de usarse un cliente web preferido para abrirlo. El comando a usar se especificará en el `shell/open/command`, subllave de ProgID de cada archivo.
 
 Volvemos con fodhelper. Vemos que intenta abir un archivo con el ProgID de ms-settings. Al crear una asosicación para ese ProgID bajo HKCU anularemos la sociacion predeterminada del sistema. Entonces controlaremos que comando se usa para abrir el archivo. Dado que fodhelper es un ejecutable de autoElevate, cualquier subproceso generará un token de alta integridad, bypassing asi el UAC.
