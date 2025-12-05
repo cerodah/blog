@@ -34,7 +34,7 @@ Desde la perspectiva de un atacante, podrían haber situaciones en la que se acc
 
 Al verificar nuestros grupos asignados, podemos confirmar que nuestra sesión se ejecutando con un IL de por medio. Lo que significa que efectivamente estamos usando un token filtrado.
 
-![UAC](../assets/image2.png)
+![UAC](blog/assets/image2.png)
 
 Como dato extra, al estar investigando. Microsoft no considera el Control de Cuentas de Usuario (UAC) como una limitación de seguridad, sino una simple comodidad para el administrador que evita la ejecución innecesaria de procesos con privilegios administrativos. En ese sentido, el aviso del UAC sirve más como recordatorio al usuario de que está ejecutando con privilegios elevados, en lugar de impedir que un malware o un atacante lo haga.
 
