@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
-
-<ul>
-    {% for post in paginator.posts %}
-      <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-      </li>
-    {% endfor %}
-</ul>
+<section class="post-list">
+  {% for post in paginator.posts %}
+  <article class="post-card">
+    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="post-card-link">
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-card-date">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <h2 class="post-card-title">{{ post.title }}</h2>
+      <p class="post-card-excerpt">{{ post.content | strip_html | truncatewords: 28 }}</p>
+      <span class="post-card-cta">read_more<span class="cta-cursor" aria-hidden="true">▌</span></span>
+    </a>
+  </article>
+  {% endfor %}
+</section>

@@ -1,5 +1,8 @@
-<footer>
-  <a href="https://notbyai.fyi">
-    <img src="assets/notbyia.png" alt="Escrito por humano, NO por una IA.">
-  </a>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-text">{{ site.owner | downcase }} · {{ site.year }}</span>
+    <a href="https://notbyai.fyi" class="footer-badge" target="_blank" rel="noopener noreferrer">
+      <img src="{{ "/assets/notbyia.png" | prepend: site.baseurl | replace: '//', '/' }}" alt="Written by human, not AI" loading="lazy" width="80">
+    </a>
+  </div>
 </footer>
